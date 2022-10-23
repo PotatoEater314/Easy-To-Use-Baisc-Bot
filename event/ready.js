@@ -7,4 +7,6 @@ module.exports = (client) => {
   client.user.setStatus("Online");
 
   client.user.setActivity(client.guilds.cache.get(config.serverid).name, { type: "WATCHING" });
+ 
+ console.log(`user has been set to "Watching"`)
 };
